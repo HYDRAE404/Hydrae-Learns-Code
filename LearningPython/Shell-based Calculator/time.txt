@@ -1,3 +1,0 @@
-def ToSec(num):
-    sec = num * 60
-    return sec
