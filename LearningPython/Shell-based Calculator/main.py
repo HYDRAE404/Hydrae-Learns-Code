@@ -89,6 +89,14 @@ def toEq():
     for i in range(len(Eq.eqchoice)):
         print(Eq.choice[i])
 
+    choose5 = int(input("[1/2/3/4/5/6] : "))
+
+    if choose5 not in [1,2,3,4,5,6]:
+        print("Invalid input, try again.")
+        toProgram
+    elif choose5 == 1:
+        print()
+
 # Main call
 
 while running:
