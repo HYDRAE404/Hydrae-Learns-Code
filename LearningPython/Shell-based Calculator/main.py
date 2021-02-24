@@ -118,7 +118,7 @@ while running:
     print("[6] Exit")
     choice = int(input("[1/2/3/4/5/6] : "))
     
-    if choice not in [1,2,3,4,5]:
+    if choice not in [1,2,3,4,5,6]:
         print("Invalid input, try again.")
     elif choice == 1:
         basicOp()
