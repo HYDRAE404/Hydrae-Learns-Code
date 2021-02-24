@@ -1,3 +1,4 @@
+eqchoice = ["[1] Equals","[2] Not Equals","[3] Greater Than","[4] Less Than","[5] At Least","[6] At Most"]
 
 def Eq(num1, num2):
     if num1==num2:
