@@ -84,7 +84,8 @@ def toProgram():
         print(toDecimal(num))
 
 def toEq():
-    num1 = input("")
+    num1 = int(input("First number: "))
+    num2 = int(input("Second number: "))
 # Main call
 
 while running:
