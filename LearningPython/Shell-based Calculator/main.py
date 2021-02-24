@@ -4,6 +4,7 @@ import temp as tmp
 import programmer_calc as procal
 import EqAndIneq as eq
 
+mainchoice = [""]
 op_choice = ["[1] Addition","[2] Subtraction","[3] Multiplication","[4] Division"]
 moremath1 = ["[1] Square","[2] Cube","[3] Square Root","[4] Cube Root"]
 tempchoice = ["[1] To Celsius","[2] To Fahrenheit"
