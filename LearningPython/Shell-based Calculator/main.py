@@ -2,7 +2,7 @@ import Operations as op
 import moremath1 as mm1
 import temp as tmp
 import programmer_calc as procal
-import EqAndIneq as Eq
+import EqAndIneq as eq
 
 op_choice = ["[1] Addition","[2] Subtraction","[3] Multiplication","[4] Division"]
 moremath1 = ["[1] Square","[2] Cube","[3] Square Root","[4] Cube Root"]
@@ -87,15 +87,25 @@ def toEq():
     num2 = int(input("Second number: "))
     
     for i in range(len(Eq.eqchoice)):
-        print(Eq.choice[i])
+        print(eq.choice[i])
 
     choose5 = int(input("[1/2/3/4/5/6] : "))
 
     if choose5 not in [1,2,3,4,5,6]:
         print("Invalid input, try again.")
-        toProgram
+        toEq()
     elif choose5 == 1:
-        print()
+        print(eq.Eq(num1,num2))
+    elif choose5 == 2:
+        print(eq.Ineq(num1,num2))
+    elif choose5 == 3:
+        print(eq.isGreaterThan(num1, num2))
+    elif choose5 == 4:
+        print(eq.isLessThan(num1, num2))
+    elif choose5 == 5:
+        print(eq.atLeast(num1, num2))
+    else:
+        print(eq.atMost(num1, num2))
 
 # Main call
 
