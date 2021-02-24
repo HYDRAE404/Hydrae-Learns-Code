@@ -7,7 +7,6 @@ import EqAndIneq as Eq
 op_choice = ["[1] Addition","[2] Subtraction","[3] Multiplication","[4] Division"]
 moremath1 = ["[1] Square","[2] Cube","[3] Square Root","[4] Cube Root"]
 tempchoice = ["[1] To Celsius","[2] To Fahrenheit"
-eqchoice = ["[]","[]","[]","[]","",""]
 
 running = True
 
@@ -86,6 +85,10 @@ def toProgram():
 def toEq():
     num1 = int(input("First number: "))
     num2 = int(input("Second number: "))
+    
+    for i in range(len(Eq.eqchoice)):
+        print(Eq.choice[i])
+
 # Main call
 
 while running:
