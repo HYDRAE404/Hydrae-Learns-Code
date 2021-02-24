@@ -29,4 +29,15 @@ def isLessThan(num1, num2):
     return result
 
 def atLeast(num1, num2):
-    pass
+    if num1 >= num2:
+        result = True
+    else:
+        result = False
+    return result
+
+def atMost(num1, num2):
+    if num1 <= num2:
+        result = True
+    else:
+        result = False
+    return result
