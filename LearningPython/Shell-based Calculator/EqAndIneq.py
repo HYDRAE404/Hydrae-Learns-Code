@@ -14,16 +14,19 @@ def Eq(num1, num2):
         result = False
     return result
 
-def greaterThan(num1, num2):
+def isGreaterThan(num1, num2):
     if num1 > num2:
         result = True
     else:
         result = False
     return result
 
-def lessThan(num1,num2):
+def isLessThan(num1, num2):
     if num1 < num2:
         result = True
     else:
         result = False
     return result
+
+def atLeast(num1, num2):
+    pass
