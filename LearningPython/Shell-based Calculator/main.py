@@ -2,10 +2,12 @@ import Operations as op
 import moremath1 as mm1
 import temp as tmp
 import programmer_calc as procal
+import EqAndIneq as Eq
 
 op_choice = ["[1] Addition","[2] Subtraction","[3] Multiplication","[4] Division"]
 moremath1 = ["[1] Square","[2] Cube","[3] Square Root","[4] Cube Root"]
-tempchoice = ["[1] To Celsius","[2] To Fahrenheit"]
+tempchoice = ["[1] To Celsius","[2] To Fahrenheit"
+eqchoice = ["[]","[]","[]","[]","",""]
 
 running = True
 
@@ -81,6 +83,8 @@ def toProgram():
         num = int(input("Now type in a number : "))
         print(toDecimal(num))
 
+def toEq():
+    num1 = input("")
 # Main call
 
 while running:
@@ -88,8 +92,9 @@ while running:
     print("[2] Roots & More")
     print("[3] Temperature Converter")
     print("[4] Programmer")
-    print("[5] Exit")
-    choice = int(input("[1/2] : "))
+    print("[5] Equalities and Inequalities")
+    print("[6] Exit")
+    choice = int(input("[1/2/3/4/5/6] : "))
     
     if choice not in [1,2,3,4,5]:
         print("Invalid input, try again.")
@@ -101,6 +106,8 @@ while running:
         toTemp()
     elif choice == 4:
         toProgram()
+    elif choice == 5:
+        toEq()
     else:
         running = False
         break
