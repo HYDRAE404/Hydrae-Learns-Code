@@ -4,7 +4,7 @@ import temp as tmp
 import programmer_calc as procal
 import EqAndIneq as eq
 
-mainchoice = [""]
+mainchoice = ["[1] Basic Operations","[2] Roots & More","[3] Temperature Converter","[4] Programmer","[5] Equalities and Inequalities","[6] Exit"]
 op_choice = ["[1] Addition","[2] Subtraction","[3] Multiplication","[4] Division"]
 moremath1 = ["[1] Square","[2] Cube","[3] Square Root","[4] Cube Root"]
 tempchoice = ["[1] To Celsius","[2] To Fahrenheit"
@@ -111,12 +111,9 @@ def toEq():
 # Main call
 
 while running:
-    print("[1] Basic Operations")
-    print("[2] Roots & More")
-    print("[3] Temperature Converter")
-    print("[4] Programmer")
-    print("[5] Equalities and Inequalities")
-    print("[6] Exit")
+    for i in range(len(mainchoice)):
+              print(mainchoice[i])
+
     choice = int(input("[1/2/3/4/5/6] : "))
     
     if choice not in [1,2,3,4,5,6]:
