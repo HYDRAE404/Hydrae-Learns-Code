@@ -18,7 +18,7 @@ namespace Main
                 Console.WriteLine("Now let's talk about the contract.");
             }
             
-            if (choice1 == "No")
+            else if (choice1 == "No")
             {
                 Console.Write("Some water perhaps? [Yes/No]: ");
                 choice2 = Console.ReadLine();
@@ -29,7 +29,7 @@ namespace Main
                     Console.WriteLine("Now let's talk about the contract.");
                 }
                 
-                if (choice2 == "No")
+                else if (choice2 == "No")
                 {
                     Console.WriteLine("Ok. Now let's talk about the contract.");
                 }
