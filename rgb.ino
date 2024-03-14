@@ -54,7 +54,7 @@ void rgbWrite(int redPin, int bluePin, int greenPin, int value)
 
 void setColor(int redVal, int greenVal, int blueVal)
 {
-    digitalWrite(redPin, redVal);
-    digitalWrite(greenPin, greenVal);
-    digitalWrite(bluePin, blueVal);
+    digitalWrite(13, redVal);
+    digitalWrite(12, greenVal);
+    digitalWrite(11, blueVal);
 }
