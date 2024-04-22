@@ -46,11 +46,19 @@ bool load(const char *dictionary)
 
     // read & transfer strings from file
     node *temp = malloc(sizeof(node));
+    if (temp == NULL) 
+    {
+        return false;
+    }
+
     int state;
+    int index;
+    char buffer[LENGTH];
+
     while (state != EOF)
     {
-
-        state = fscanf(file, "%s", );
+        state = fscanf(file, "%s", &buffer);
+        index = hash(buffer);
     }
 
 
